@@ -8,9 +8,8 @@
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <title>Breakfast</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="maininitial.css">
   <link rel="stylesheet" type="text/css" href="font.css">
-  <link rel="stylesheet" type="text/css" href="normalize.css">
 </head>
 
 <body>
@@ -126,9 +125,9 @@
 
   <!--Section 5-->
 
-  <section class="offers">
-    <div class="rowEnjoy">
-      <div class="col-xl-6 textCenter"> <!--col-xl-6 à faire en CSS -->
+  <section id="offers" class="container-fluid w-100 vh-100 mb-5">
+    <div class="row align-items-center justify-content-center h-100">
+      <div class="col-xl-6 text-center p-5">
         <h1>Enjoy Our Food</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.aliquip
           ex ea commodo consequat.</p>
@@ -138,11 +137,9 @@
 
   <!--Section 6-->
 
-  <section id="menu" class="menu">
-    <div class="rowCarousel">
-
-    <!-- Début Carousel de Boostrap -->
-    <div id="carouselExampleCaptions" class="col-xl-8 carousel slide" data-ride="carousel"> <!--col-xl-8 à faire en CSS -->
+  <section id="menu" class="container-fluid w-100 h-100">
+    <div class="row justify-content-center">
+    <div id="carouselExampleCaptions" class="col-xl-8 carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -183,44 +180,40 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- Fin Carousel de Boostrap -->
-
   </div>
   </section>
 
   <!--Footer-->
 
-  <section id="footer">
-    <div class="best-meal">
-      <img src="images-breakfast/fruit-oeuf.png" alt="Eggs with Fruits" class="img-footer">
-      <div class="text-best-meal">
+  <section id="footer" class="container-fluid h-100">
+    <div class="row best-meal align-items-center text-center text-xl-left w-auto">
+      <img src="images-breakfast/fruit-oeuf.png" alt="Eggs with Fruits" class="img-footer position-absolute d-none d-xl-inline">
+      <div class="col-xl-4 text-best-meal">
         <h1>Enjoy Best Meal</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
       </div>
     </div>
 
-      <div class="footerPlacement background-row">
-        <img src="images-breakfast/coeur-orange.png" alt="Logo" class="logo-footer"/>
+      <div class="row flex-row justify-content-center align-item-center pt-5 background-row">
+        <img src="images-breakfast/coeur-orange.png" alt="Logo" class="logo-footer mr-3 mt-n2"/>
         <h1>Food Lover</h1>
       </div>
-
-      <div class="footerPlacement background-row">
-        <ul class="list-footer">
-          <li class="footerGlobal"><a href="#homepage">Home</a></li>
-          <li class="footerGlobal"><a href="#about">About us</a></li>
-          <li class="footerGlobal"><a href="#quality">Service</a></li>
-          <li class="footerGlobal"><a href="#gallery">Food</a></li>
-          <li class="footerGlobal"><a href="#">Contact Us</a></li>
-          <li class="footerGlobal"><a href="#">Location</a></li>
+      <div class="row flex-row justify-content-center align-item-center pt-5 background-row">
+        <ul class="list-footer text-center p-0">
+          <li class="m-3 uppercase"><a href="#homepage">Home</a></li>
+          <li class="m-3 uppercase"><a href="#about">About us</a></li>
+          <li class="m-3 uppercase"><a href="#quality">Service</a></li>
+          <li class="m-3 uppercase"><a href="#gallery">Food</a></li>
+          <li class="m-3 uppercase"><a href="#">Contact Us</a></li>
+          <li class="m-3 uppercase"><a href="#">Location</a></li>
         </ul>
       </div>
-
-      <div class="footerPlacement background-row">
-        <ul class="list-footer2">
-          <li class="footerGlobal"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-fb d-inline-block">fb</a></li>
-          <li class="footerGlobal"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-tw d-inline-block">tw</a></li>
-          <li class="footerGlobal"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-inst d-inline-block">inst</a></li>
-          <li class="footerGlobal"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-pint d-inline-block">pint</a></li>
+      <div class="row flex-row justify-content-center align-item-center pt-5 background-row">
+        <ul class="list-footer2 text-center p-0">
+          <li class="m-3 uppercase"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-fb d-inline-block">fb</a></li>
+          <li class="m-3 uppercase"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-tw d-inline-block">tw</a></li>
+          <li class="m-3 uppercase"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-inst d-inline-block">inst</a></li>
+          <li class="m-3 uppercase"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="logo-pint d-inline-block">pint</a></li>
         </ul>
       </div>
   </section>
