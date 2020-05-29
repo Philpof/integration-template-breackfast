@@ -112,12 +112,51 @@ body {
   background-color: #fe9000;
   height: 100%;
 }
+#quality h1 {
+  margin: 0.5rem;
+}
+
+#quality p {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+.food-qualityPhil {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.food-quality {
+  text-align: center;
+}
 
 /*Css Section 4*/
 
 .image-gallery {
   margin-bottom: 1rem;
   max-width: 450px;
+  width: 75%;
+}
+
+.galleryPhil {
+  width: 100;
+  margin-bottom: 3rem;
+}
+
+.ourFoodPhil {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.imagePhil {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100;
+  margin: auto;
 }
 
 /*Css Section 5*/
@@ -139,14 +178,15 @@ body {
   display: flex;
 }
 
-.offers h1 {
-
-}
-
 .textCenter {
   background-color: #242430;
   border: 10px solid #fe9000;
-  padding: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /*Css Section 6*/
@@ -326,11 +366,18 @@ body {
   :root {
     font-size: 13px;
   }
+
+  .image-gallery {
+    width: auto;
+  }
 }
 
 @media (min-width: 768px) {
   :root {
     font-size: 14px;
+  }
+  .image-gallery {
+    margin: 0.3rem;
   }
 }
 
@@ -351,8 +398,22 @@ body {
     flex-direction: row;
     justify-content: flex-start;
   }
+
+  .imagePhil{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+  .textCenter {
+    width: 50%;
+    display: flex;
+    text-align: center;
+  }
+
   .food-quality {
     max-width: 30rem;
+    text-align: left;
   }
   #quality {
     background-color: transparent;
@@ -381,6 +442,10 @@ body {
 @media (min-width: 1500px) {
   :root {
     font-size: 18px;
+  }
+  .imagePhil{
+    flex-direction:row;
+    justify-content: center;
   }
   #quality {
     height: 150rem !important;
