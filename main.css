@@ -36,7 +36,6 @@ body {
 }
 
 .logo-text {
-
   text-align: center;
   margin-right: 2rem;
   margin-left: 0.6rem;
@@ -225,10 +224,14 @@ body {
 .footerPlacement {
   align-items: center;
   display: flex;
-  padding-top: 3rem;
+  flex-direction: row;
+  padding-top: 2rem;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+
+}
+.footerPlacement h1 {
+  margin: 0rem;
+  margin-bottom: 1rem;
 }
 
 .img-footer {
@@ -246,6 +249,15 @@ body {
   width: auto;
 }
 
+.text-best-meal {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.text-best-meal h1 {
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+}
+
 .background-row {
   background-color: rgb(47, 47, 57) !important;
 }
@@ -255,6 +267,24 @@ body {
   height: 66px;
   margin-right: 1rem;
   margin-top: -0.4rem;
+}
+
+.list-footer {
+  margin: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0rem;
+}
+
+.list-footer2 {
+  margin: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5rem;
 }
 
 .list-footer ul {
@@ -288,6 +318,7 @@ body {
   height: 35px;
   width: 35px;
   color: transparent;
+  display: inline-block;
 }
 
 .logo-fb:hover, .logo-fb:visited {
@@ -308,6 +339,7 @@ body {
   height: 35px;
   width: 35px;
   color: transparent;
+  display: inline-block;
 }
 
 .logo-tw:hover, .logo-tw:visited {
@@ -328,6 +360,7 @@ body {
   height: 35px;
   width: 35px;
   color: transparent;
+  display: inline-block;
 }
 
 .logo-inst:hover, .logo-inst:visited {
@@ -348,6 +381,7 @@ body {
   height: 35px;
   width: 35px;
   color: transparent;
+  display: inline-block;
 }
 
 .logo-pint:hover, .logo-pint:visited {
@@ -430,8 +464,8 @@ body {
     text-align: left;
   }
   .text-best-meal {
-    left: 650px;
-    width: 30%;
+    left: 630px;
+    width: 40%;
     position: relative;
   }
   .img-footer {
@@ -456,5 +490,10 @@ body {
   #quality p {
     font-size: 3rem;
     line-height: 3.2rem;
+  }
+  .text-best-meal {
+    left: 630px;
+    width: 33%;
+    position: relative;
   }
 }
